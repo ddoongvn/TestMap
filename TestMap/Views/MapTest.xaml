@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TestMap.Views.MapTest"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:maps="clr-namespace:Syncfusion.SfMaps.XForms;assembly=Syncfusion.SfMaps.XForms"
+    xmlns:prism="http://prismlibrary.com"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <Grid>
+        <maps:SfMaps
+            x:Name="SfMap"
+            Grid.Row="0"
+            EnablePanning="True"
+            EnableZooming="True"
+            MaxZoom="9"
+            MinZoom="3"
+            ZoomLevel="6">
+            <maps:SfMaps.Layers>
+                <maps:ImageryLayer
+                    CanCacheTiles="True"
+                    GeoCoordinates="66.81337252,-11.66571815"
+                    Markers="{Binding Markers}"
+                    ResetOnDoubleTap="False"
+                    Sublayers="{Binding Sublayers}" />
+            </maps:SfMaps.Layers>
+        </maps:SfMaps>
+    </Grid>
+
+</ContentPage>
