@@ -51,7 +51,7 @@ namespace TestMap.ViewModels
         {
             var color = Xamarin.Forms.Color.Blue;
             ShapeFileLayer subLayer = new ShapeFileLayer();
-            subLayer.ShapeType = ShapeType.Polygon;
+            subLayer.ShapeType = ShapeType.Polyline;
             subLayer.Points = new ObservableCollection<Xamarin.Forms.Point>()
             {
                 new Point(67.26238555,-14.31983023),
