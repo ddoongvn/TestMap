@@ -8,5 +8,10 @@ namespace TestMap.Views
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, System.EventArgs e)
+        {
+            SfMap.ZoomLevel += 1;
+        }
     }
 }

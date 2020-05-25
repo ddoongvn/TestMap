@@ -15,6 +15,7 @@
             MaxZoom="9"
             MinZoom="3"
             ZoomLevel="6">
+
             <maps:SfMaps.Layers>
                 <maps:ImageryLayer
                     CanCacheTiles="True"
@@ -24,6 +25,12 @@
                     Sublayers="{Binding Sublayers}" />
             </maps:SfMaps.Layers>
         </maps:SfMaps>
+        <Button
+            Clicked="Button_Clicked"
+            HeightRequest="50"
+            HorizontalOptions="End"
+            Text="Click"
+            VerticalOptions="End" />
     </Grid>
 
 </ContentPage>
